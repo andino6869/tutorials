@@ -41,3 +41,10 @@ spec:
         resources:
           requests:
             storage: 20Gi
+  # START: Deployed Thanos Sidecar
+  thanos:
+    version: v0.31.0
+    objectStorageConfig:
+      name: objstore
+      key: objstore.yml
+    # END: Deployed Thanos Sidecar
