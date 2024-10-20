@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: minio-console
+  namespace: minio
+spec:
+  type: LoadBalancer
+  selector:
+    app: minio
+  ports:
+    - protocol: TCP
+      port: 9000   # This is the port MinIO console uses
+      targetPort: 9000
