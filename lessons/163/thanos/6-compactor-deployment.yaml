@@ -41,7 +41,7 @@ spec:
             runAsUser: 1001
           args:
             - compact
-            - --log.level=info
+            - --log.level=debug
             - --http-address=0.0.0.0:10902
             - --data-dir=/data
             - --retention.resolution-raw=7d
